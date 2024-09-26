@@ -1,0 +1,32 @@
+{% load static %}
+{#{% load render_partial %}#}
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+
+<head>
+{% include 'includes/refrences/headRefrence.html' %}
+    {% block style %}
+    	
+    {% endblock %}
+</head>
+
+
+<body class="font-DanaRegular bg-gray-100 dark:bg-zinc-800">
+{% include 'includes/home_page/svg.html' %}
+{% include 'includes/home_page/header.html' %}
+
+<main>
+
+
+{% block main %}
+
+{% endblock %}
+</main>
+
+{% include 'includes/home_page/footer.html' %}
+{% include 'includes/refrences/footerRefrence.html' %}
+{% block script %}
+	
+{% endblock %}
+</body>
+</html>
